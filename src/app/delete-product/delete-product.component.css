@@ -1,0 +1,12 @@
+/* delete-product.component.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.message {
+  color: red;
+}
+
+button {
+  margin: 5px;
+}

@@ -1,0 +1,21 @@
+<div>
+  <h1 style="text-align: center; color: #dc3545;">Supprimer le produit</h1>
+</div>
+
+<section class="body">
+  <div *ngIf="product">
+    <h2>Êtes-vous sûr de vouloir supprimer le produit ?</h2>
+    <p><strong>ID:</strong> {{ product.id }}</p>
+    <p><strong>Nom:</strong> {{ product.name }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+    <p><strong>Prix:</strong> {{ product.price }}</p>
+    <p><strong>Stock:</strong> {{ product.stock }}</p>
+
+    <button (click)="deleteProduct()">Supprimer</button>
+    <button (click)="goBack()">Retour</button>
+  </div>
+  
+  <div *ngIf="message" class="message">
+    {{ message }}
+  </div>
+</section>

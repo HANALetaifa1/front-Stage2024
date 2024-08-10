@@ -1,0 +1,35 @@
+
+.rectangle{
+    background-color: #BAD7E4;
+}.socialmedia {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement les icônes */
+    gap: 10px; /* Espacement entre les icônes, ajustez selon vos besoins */
+    padding: 10px; /* Espacement autour des icônes, ajustez selon vos besoins */
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacement entre les icônes */
+    margin-top: 15px;
+  }
+  
+  .social-media i {
+    font-size: 24px; /* Taille des icônes */
+    color: #333; /* Couleur des icônes */
+    cursor: pointer;
+  }
+  
+  .social-media i:hover {
+    color: #007bff; /* Couleur au survol */
+  }
+
+.social-media-icon {
+    width: 30px; /* Ajustez la taille des icônes si nécessaire */
+    height: auto; /* Garder les proportions d'origine */
+    cursor: pointer; /* Indique que l'icône est cliquable */
+}
+
+.social-media-icon:hover {
+    opacity: 0.7; /* Effet de survol pour les icônes */
+}

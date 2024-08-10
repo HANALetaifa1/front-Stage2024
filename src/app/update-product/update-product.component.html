@@ -1,0 +1,49 @@
+<!-- update-product.component.html -->
+
+<div>
+  <h1 style="text-align: center; color: #007bff;">Modifier le produit</h1>
+</div>
+<section class="body">
+  <form [formGroup]="productForm" >
+    <div>
+      <label for="name">id :</label>
+      <input id="Id" formControlName="Id">
+      </div>
+    <div>
+      <label for="name">Nom :</label>
+      <input id="name" formControlName="name">
+      <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched">
+        <small class="error">Nom requis</small>
+      </div>
+    </div>
+
+    <div>
+      <label for="price">Prix :</label>
+      <input id="price" formControlName="price">
+      <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">
+        <small class="error">Prix requis et doit être un nombre valide</small>
+      </div>
+    </div>
+
+    <div>
+      <label for="description">Description :</label>
+      <textarea id="description" formControlName="description"></textarea>
+    </div>
+
+    <div>
+      <label for="stock">Stock :</label>
+      <input id="stock" formControlName="stock">
+      <div *ngIf="productForm.get('stock')?.invalid && productForm.get('stock')?.touched">
+        <small class="error">Stock requis et doit être un nombre entier</small>
+      </div>
+    </div>
+
+    <button type="submit" (ngSubmit)="onSubmit()" >Modifier</button>
+    <button type="button" (click)="goBack()">Retour</button>
+
+    <!-- Message de succès ou d'erreur -->
+    <div *ngIf="message" class="message">
+      {{ message }}
+    </div>
+  </form>
+</section>

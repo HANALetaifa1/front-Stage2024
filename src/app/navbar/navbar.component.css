@@ -1,0 +1,22 @@
+/* navbar.component.css */
+.navbar {
+    background-image: url('../../assets/backgrounD.PNG');
+    height: 400px;
+    background-size: cover;
+   background-position: center; 
+  background-repeat: no-repeat;
+}
+.nav-link {
+    color:white;
+}
+
+  .navbar-nav{
+    margin-left: 700px;
+
+  }
+  .container{
+    margin-bottom: 330px;
+  }
+ 
+  
+  
